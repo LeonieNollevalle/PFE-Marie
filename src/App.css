@@ -1,38 +1,511 @@
-.App {
+@font-face {
+  font-family: 'Edensor';
+  src: url('./fonts/edensor.eot');
+  src: 
+      url('./fonts/edensor.woff2') format('woff2'),
+      url('./fonts/edensor.woff') format('woff'),
+      url('./fonts/edensor.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tiny";
+  src: url("./fonts/tiny5x3-300-webfont.woff2") format("woff2"),
+    url("./fonts/tiny5x3-300-webfont.woff") format("woff"),
+    url("./fonts/tiny5x3-300-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@media only screen and (orientation:portrait){
+
+  .alert {
+    font-size: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+  }
+  
+}
+
+.alert {
+  display: none;
+}
+.global-container{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'Edensor';
+  font-weight: normal;
+}
+.title {
+  font-size: 70px;
+  margin: 0;
+}
+
+.sub-title{
+  margin: 0;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  font-size: 14px;
+}
+
+body {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+
+}
+
+
+
+.header{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.header h1{
+  margin:0;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 170px;
   text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0; 
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 200px;
+  margin-left: 20px;
+  padding: 2px;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header p {
+margin: 0;
+padding: 0;
+background-color: black;
+color: white;
+border: 1px solid black;
+border-radius: 50px;
+height: 20px;
+padding-inline: 10px;
+padding-top:2px;
+width: auto;
+font-size: 12px;
+
+
+}
+
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+.carte1 {
+  width:auto ;
+  height: 100vh;
+ }
+
+.point {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  border:1px solid black;
+  transform: translateX(30px)
+  
+}
+.point:hover {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.projet{
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  left:0;
+  top:0;
+  background-color: black;
+  animation: projet 1s ease-in-out;
+}
+
+@keyframes projet {
+  0% {
+    opacity: 0%;
+  }
+  
+  100% {
+    opacity: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.etiquette {
+  color: transparent;
+}
+.point:hover .etiquette {
+  background-color:yellow;
+  padding:3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 50px;
+  text-align: center;
+  position: relative;
+  top: 12px;
+  left: 18px;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: black;
+}
+.logo {
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-right : 1px solid black;
+}
+
+.marie {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+}
+
+.video {
+  height: 100vh;
+  width: 100vw;
+}
+
+.cross {
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 0;
+  left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.name {
+  width: auto;
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  height: 50px;
+  border-radius: 50px;
+  top: 0;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-weight:400;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.container-pers{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+  position: absolute;
+  bottom: -100;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.div-pers{
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}
+.info-pers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.id-pers {
+  width: auto;
+  height: auto;
   color: white;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 18px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  font-size: 12px;
+  left: 2%;
+}
+.name-pers {
+  width: auto;
+  height: auto;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding: 10px;
+  position: absolute;
+  font-size: 12px;
+  left: 8%;
 }
 
-.App-link {
-  color: #61dafb;
+.light-pers-off{
+  width: auto;
+  height: auto;
+  color: black;
+  color: white;
+  background-color: black;
+  border:1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  font-size: 12px;
+  right: 2%;
+}
+.light-pers-on{
+  width: auto;
+  height: auto;
+  color: black;
+  background-color: transparent;
+  border:1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  right: 2%;
+  font-size: 12px;
+
+}
+.div-pers img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sub-info{
+  width: 100%;
+  margin-left:20px;
+  margin-right:20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-info {
+  height: 65%;
+  display: flex;
+}
+
+.block-top{
+  height: 10vh;
+  width: 100vw;
+  background-color: white;
+  border: 1px solid black; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 32;
+  animation: top-frame 5s ease-in-out;
+
+}
+@keyframes top-frame {
+  0% {
+    width: 0;
+    height: 5vh;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    height: 5vh;
+    width: 100vw;
   }
+  50% {
+    height: 5vh;
+    width: 100vw;
+  }
+  100% {
+    height: 10vh;
+    width: 100vw;
+  }
+}
+.block-bottom{
+  height: 10vh;
+  width: 100vw;
+  background-color: white;
+  border: 1px solid black; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 32;
+  animation: bottom-frame 5s ease-in-out;
+}
+@keyframes bottom-frame {
+  0% {
+    width: 0;
+    height: 5vh;
+  }
+  25% {
+    height: 5vh;
+    width: 100vw;
+  }
+  50% {
+    height: 5vh;
+    width: 100vw;
+  }
+  100% {
+    height: 10vh;
+    width: 100vw;
+  }
+}
+.block-left{
+  width: 5vw;
+  height: 100vh;
+  background-color: white;
+  border: 1px solid black; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 32;
+  animation: left-frame 5s ease-in-out;
+}
+@keyframes left-frame {
+  0% {
+    height: 0;
+    width: 12vw;
+  }
+  25% {
+    height: 100vh;
+    width: 12vw;
+  }
+  50% {
+    height: 100vh;
+    width: 12vw;
+  }
+  100% {
+    width: 5vw;
+  }
+}
+
+.block-right{
+  width: 5vw;
+  height: 100vh;
+  background-color: white;
+  border: 1px solid black; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 32;
+  animation: right-frame 5s ease-in-out;
+
+}
+@keyframes right-frame {
+  0% {
+    height: 0;
+    width: 12vw;
+  }
+  25% {
+    height: 100vh;
+    width: 12vw;
+  }
+  50% {
+    height: 100vh;
+    width: 12vw;
+  }
+  100% {
+    width: 5vw;
+  }
+}
+.block-center {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+}
+
+.block-center img {
+  width: 30%;
+  animation: center-frame 5s ease-in-out;
+}
+
+@keyframes center-frame {
+  0% {
+    width: 60%;
+   
+  }
+  100% {
+    width: 30%;
+    transform: rotate(90deg);
+  }
+}
+
+.global-block {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+ 
+}
+
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
 }
