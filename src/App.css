@@ -110,8 +110,9 @@ color: white;
 border: 1px solid black;
 border-radius: 50px;
 height: 20px;
-padding-inline: 10px;
-padding-top:2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top:3px;
 width: auto;
 font-size: 12px;
 
@@ -138,7 +139,7 @@ font-size: 12px;
   position: absolute;
   background-color: black;
   border:1px solid black;
-  transform: translateX(30px)
+  transform: translateX(50px) translateY(30px);
   
 }
 .point:hover {

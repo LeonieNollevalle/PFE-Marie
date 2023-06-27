@@ -165,8 +165,11 @@ console.log(turn)
           <div className="container-info">
           <div className="sub-info">
           <p>Marie-Amélie André</p>
+          <div style={{display:'flex',gap:'10px'}}>
           <p>PFE</p>
           <p>D.E.Instrumenter 2023</p>
+          </div>
+          
           </div>
           </div>
           
