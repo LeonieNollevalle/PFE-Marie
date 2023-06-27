@@ -139,7 +139,7 @@ font-size: 12px;
   position: absolute;
   background-color: black;
   border:1px solid black;
-  transform: translateX(50px) translateY(30px);
+  transform: translateX(50px) translateY(10px);
   
 }
 .point:hover {
